@@ -4,13 +4,14 @@ Per E-Mail oder Post, dieses System kann als Link per QR-Code oder PDF-Link unn�
 
 > v0.1.0 testing / working : OK!
 
-
 ## Die Idee:
 
-Wie wäre es nur eine Postkarte oder Kurnbewerbung in die Post zu geben ohne diesen giganteischen Stapel an Papier.
+Wie wäre es nur eine Postkarte oder Kurzbewerbung in die Post zu geben ohne diesen giganteischen Stapel an Papier?
+
 Und doch eine vollständige Bewerbung abzugeben.
-* Das Problem ist offenkundig, niemand möchte den Papieraufwand oder seine persönlichen Dokumente einfach irgendwo hochladen für jeden Zugänglich.
-* E-Mail Anhang: zu groß
+
+* Das Problem ist offenkundig, niemand möchte den Papieraufwand oder seine persönlichen Dokumente einfach iwo. hochladen für jeden Zugänglich.
+* per E-Mail Anhang: wie immer __zu groß__
 * **__Ärgerlich__**.
 
 Nun, es gibt eine schicke Lösung um Webseiten Links zu verpacken -> QR-Codes
@@ -29,9 +30,9 @@ Aus der Kombination wird eine einfache Option zum übersenden der Information.
 * "Preview" mit Blätter-Funktion
 
 
-How To:
+## How To:
 
-* 1. git clone https://gitlab... /Ordner   (/Ordner ist optional)
+* 1. `git clone https://github.com/AlexBander/Bewerbung-System-Online-Support.git` __`/Ordner`__   (/ **Ordner** ist Optional)
 oder
 * 2. Download von gitlab und Upload auf deinen Webspace/Server
 * 3. Editiere die [config.inc.php](config.inc.php), mit deinen Angaben sowie:
