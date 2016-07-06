@@ -36,7 +36,8 @@ Aus der Kombination wird eine einfache Option zum übersenden der Information.
 
 oder
 
- * 2. Download von gitlab und Upload auf deinen Webspace/Server
+  * 2. Download von gitlab und Upload auf deinen Webspace/Server
+
 * 3. Editiere die [config.inc.php](config.inc.php), mit deinen Angaben sowie:
  *   Bsp.1:     $link = "bewerbung"; zu **"post"**;  
           und/oder
