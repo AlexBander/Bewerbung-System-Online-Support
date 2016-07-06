@@ -8,7 +8,7 @@ Per E-Mail oder Post, dieses System kann als Link per QR-Code oder PDF-Link unn�
 
 Wie wäre es nur eine Postkarte oder Kurzbewerbung in die Post zu geben ohne diesen giganteischen Stapel an Papier?
 
-Und doch eine vollständige Bewerbung abzugeben.
+**Und doch eine vollständige Bewerbung abzugeben.**
 
 * Das Problem ist offenkundig, niemand möchte den Papieraufwand oder seine persönlichen Dokumente einfach iwo. hochladen für jeden Zugänglich.
 * per E-Mail Anhang: wie immer __zu groß__
@@ -32,16 +32,18 @@ Aus der Kombination wird eine einfache Option zum übersenden der Information.
 
 ## How To:
 
-* 1. `git clone https://github.com/AlexBander/Bewerbung-System-Online-Support.git` __`/Ordner`__   (/ **Ordner** ist Optional)
+* 1. `git clone https://github.com/AlexBander/Bewerbung-System-Online-Support.git` __`/Ordner`__   ( **/Ordner** ist Optional)
+
 oder
-* 2. Download von gitlab und Upload auf deinen Webspace/Server
+
+ * 2. Download von gitlab und Upload auf deinen Webspace/Server
 * 3. Editiere die [config.inc.php](config.inc.php), mit deinen Angaben sowie:
  *   Bsp.1:     $link = "bewerbung"; zu **"post"**;  
           und/oder
  *   Bsp.2:      $methode="get";   zu **"wert"**;  
 * 4. Betitle die Datei `bewerbung.php` in `post.php` um
 * 5. Dein Link für QR lautet dann -> https://yourwebsite.xy/ **post.php**?**wert**=
-* 6. Lade nun deinen Ordner (**1**) mit deinen Dokumenten hoch. **!__Achtung__!** = In der __Version 0.1.0__ erscheinen im "Preview" nur PDF Dokumente.
+* 6. Lade nun deinen Ordner (**1**) mit deinen Dokumenten hoch. **!__Achtung__!** In der __Version 0.1.0__ erscheinen im "Preview" nur PDF Dokumente.
   *   Bsp.3: Ordner Name: **Docs15284564A**   Inhalt: meherer PDFs  
 * 7. Dein vollständige Link für QR lautet nun https://yourwebsite.xy/ **post.php**?**wert**=**Docs15284564A**
 * 8. Das System läuft nun. Du bist eigentlich schon Fertig. Feel free to upload more in other named folders :)
