@@ -42,11 +42,11 @@ oder
 * 4. Betitle die Datei `bewerbung.php` in `post.php` um
 * 5. Dein Link für QR lautet dann -> https://yourwebsite.xy/**post.php**?**wert**=
 * 6. Lade nun deinen Ordner (**1**) mit deinen Dokumenten hoch. !Achtung! = In der Version 0.1.0 erscheinen im "Preview" nur PDF Dokumente.
->*   Bsp.3: Ordner Name: **Docs15284564A**   Inhalt: meherer PDFs
-* 7. Dein vollständige Link für QR lautet nun https://yourwebsite.xy/**post.php**?**wert**=**Docs15284564A**
-* 8. Das System läuft nun. Du bist eigentlich schon Fertig.
+  *   Bsp.3: Ordner Name: **Docs15284564A**   Inhalt: meherer PDFs  
+* 7. Dein vollständige Link für QR lautet nun https://yourwebsite.xy/ **post.php** ? **wert** = **Docs15284564A**
+* 8. Das System läuft nun. Du bist eigentlich schon Fertig. Feel free to upload more in other named folders :)
 * 9. Editiere die **index.php**, `about.php` und passe ggf. in der `impressum.php` den Datenschutz etc deinen Wünschen und Vorstellungen an (Impressum: etc. und **Button** `Kontakt` musst du nichts weiter machen).
 * 10. Schau dir erstmal das Ergebnis auf `index.php` an, dann auf  **post.php**?**wert**=**Docs15284564A**
 * Fertig.
 
-# Don't commit your configs and 
+# Don't commit your configs and Web-Settings to this Repository!
