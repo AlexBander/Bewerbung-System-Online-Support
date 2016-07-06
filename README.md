@@ -35,16 +35,18 @@ How To:
 * 1. git clone https://gitlab... /Ordner   (/Ordner ist optional)
 oder
 * 2. Download von gitlab und Upload auf deinen Webspace/Server
-* 3. Editiere die [config.inc.php](src/config.inc.php), nach deinen Angaben sowie:
->*   Bsp.1:     $link = "bewerbung"; zu **"post"**;
+* 3. Editiere die [config.inc.php](config.inc.php), mit deinen Angaben sowie:
+ *   Bsp.1:     $link = "bewerbung"; zu **"post"**;  
           und/oder
->*   Bsp.2:      $methode="get";   zu **"wert"**;
+ *   Bsp.2:      $methode="get";   zu **"wert"**;  
 * 4. Betitle die Datei `bewerbung.php` in `post.php` um
 * 5. Dein Link für QR lautet dann -> https://yourwebsite.xy/**post.php**?**wert**=
 * 6. Lade nun deinen Ordner (**1**) mit deinen Dokumenten hoch. !Achtung! = In der Version 0.1.0 erscheinen im "Preview" nur PDF Dokumente.
 >*   Bsp.3: Ordner Name: **Docs15284564A**   Inhalt: meherer PDFs
 * 7. Dein vollständige Link für QR lautet nun https://yourwebsite.xy/**post.php**?**wert**=**Docs15284564A**
 * 8. Das System läuft nun. Du bist eigentlich schon Fertig.
-* 9. Editiere die **index.php**, about.php und passe ggf. in der impressum.php die Datenschutz etc Daten deinen Wünschen und Vorstellungen an (Impressum: etc. und Button Kontakt musst du nichts weiter machen).
-* 10. Schau dir erstmal das Ergebnis auf index.php an, dann auf  **post.php** ? **wert** =**Docs15284564A**
+* 9. Editiere die **index.php**, `about.php` und passe ggf. in der `impressum.php` den Datenschutz etc deinen Wünschen und Vorstellungen an (Impressum: etc. und **Button** `Kontakt` musst du nichts weiter machen).
+* 10. Schau dir erstmal das Ergebnis auf `index.php` an, dann auf  **post.php**?**wert**=**Docs15284564A**
 * Fertig.
+
+# Don't commit your configs and 
