@@ -17,7 +17,7 @@ Wie wäre es nur eine Postkarte oder Kurzbewerbung in die Post zu geben ohne die
 Nun, es gibt eine schicke Lösung um Webseiten Links zu verpacken -> QR-Codes
 Und es gibt die möglichkeiten mit PHP.
 
-Aus der Kombination wird eine einfache Option zum übersenden der Information.
+## Aus der Kombination wird eine einfache Option zum übersenden der Information.
 
 * 1. Wie ihr den QR-Code erstellt und in eure Dokumente bekommt, müsst ihr eueren Gegebenheiten anpassen (Online Generator, Desktop-Software, Smartphone oder über TeX).
 * 2. Euer Server oder Webspace muss PHP können, dann läuft das auch mit dem bereitstellen der Subseiten.
@@ -42,7 +42,7 @@ oder
  *   Bsp.1:     $link = "bewerbung"; zu **"post"**;  
           und/oder
  *   Bsp.2:      $methode="get";   zu **"wert"**;  
-* 4. Betitle die Datei `bewerbung.php` in `post.php` um
+* 4. Nennen die Datei `bewerbung.php` in `post.php` um. Oder wie dir beliebt. ("post" und "wert" sind nur Beispiele)
 * 5. Dein Link für QR lautet dann -> https://yourwebsite.xy/ **post.php**?**wert**=
 * 6. Lade nun deinen Ordner (**1**) mit deinen Dokumenten hoch. **!__Achtung__!** In der __Version 0.1.0__ erscheinen im "Preview" nur PDF Dokumente.
   *   Bsp.3: Ordner Name: **Docs15284564A**   Inhalt: meherer PDFs  
@@ -52,4 +52,4 @@ oder
 * 10. Schau dir erstmal das Ergebnis auf `index.php` an, dann auf  **post.php**?**wert**=**Docs15284564A**
 * Fertig.
 
-# Don't commit your configs and Web-Settings to this Repository!
+## Don't commit your configs and Web-Settings to this Repository!
