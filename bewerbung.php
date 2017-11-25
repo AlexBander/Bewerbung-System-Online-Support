@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<?php include 'header.php'; ?>
+<?php include 'header.php';?>
     <?php
         include 'bewerbung.inc.php';
-        if (isset($_GET['get'])){                                                ## Prüfung ob es sich um einen autorisierten Link handelt
-           auth($_GET['get']);
+        if (isset($_GET['get'])){                           # Prüfung ob es sich um einen autorisierten Link handelt
+           auth($_GET['get'], $subfolder);                  # #1
             if ($_GET['get']==$_SESSION['gets'])            # Hash für den Bewerbungslinkin PDF bzw. QR-Code auf Brief
             {
-                $_SESSION['check']=123456789;               # Interne Validierung,  sollte geändert werden. Belibig
+                $_SESSION['check']=$key;               # Interne Validierung,  sollte geändert werden. Belibig
                 $_SESSION['get'] = $_GET['get'];
             }
         }
-
-        ?>
+?>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
@@ -62,9 +60,16 @@
                             <p>Sie sind nun im Ansicht- und Download-Bereich für die Bewerbungsdokumente</p>
                             <br>
                             <?php
-                                 if ($_SESSION['check']==123456789)
+                                 if ($_SESSION['check']==$key)
                                  {
-                                #    include 'bewerbung.inc.php';
+                                     $ordner = $_SESSION['get'];
+                                    include 'counter.inc.php';
+                                     $counter=counter($subfolder, $ordner, "count.txt");
+                                     $counter++;
+                                     counterSiteUp($subfolder, $ordner,$counter);
+                                     echo "Counter: $counter";
+                                     $counterFail=counter($subfolder, "bla","count_Fail.txt");
+                                     echo "Fail: $counterFail";
                                     if (isset($_REQUEST['nr']))
                                     {
                                             if (isset($_COOKIE['fnr']))
@@ -89,10 +94,8 @@
                                     $replace    = array(""      ,""      ," "    ,""     ,""                 ,"Zertifikat(e)",   "-");       # beim 5. wenn du deine Dokumente mit Namen versiehst, bitte anpassen. etc.
 
                                         $filter=array($search,$replace);
-            #                            $filter=array(".txt","_");
                                         sfs($_SESSION['get'], $filter, $subfolder);
                                     echo "</div>";
-                                        $ordner = $_SESSION['get'];
                                         $dateien = $_SESSION['dateien'][0];
                                         $dateien_length = count($dateien)-1;                                                                      # Ermittlung der Anzahl an Dateien
                                      if(isset($_GET['nr']))
@@ -121,14 +124,13 @@
                                 echo "</div>";
                                 echo "<div class='col-lg-6 col-md-8 col-sm-8'>";
                                       echo "Datei: $dateien[$datei]";
-                                     echo "<object data='$subfolder/$ordner/pdfs/$dateien[$datei]' type='application/pdf' style='width:100%;height:850px'> <a href='$subfolder/$ordner/pdfs/$dateien[$datei]'>PDF laden</a> </object>";
-                                }
-
-                           # echo "</div>";
-                                ?> </div>
+                                     echo "<object data='read.php?get=$dateien[$datei]' type='application/pdf' style='width:100%;height:850px'> <a href='download.php?get=$dateien[$datei]'>PDF laden</a> </object>";
+                                }?>
+                            </div>
                         <?php endif; ?>
                     </div>
-                    <hr>
-        <?php include "footer.php"; ?>
+                </div>
+            <hr>
+        <?php include "footer.php";?>
     </body>
 </html>
