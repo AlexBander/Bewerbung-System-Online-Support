@@ -47,4 +47,4 @@
                 </blockquote>
             </div>
         </div>
-<?php endif; session_start();?>
+<?php endif; session_start(); #5?>

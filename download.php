@@ -9,11 +9,11 @@
         }
         $test = $_SESSION['check'];
         $counterfail=counter($subfolder, "Fail" , "count_Fail.txt");
-        if ($_SESSION['check']==$key)
+        if ($_SESSION['check']==$key)                                                       #4
             {
                 $foldername =$_SESSION['get'];
                 $path = $subfolder.'/'.$foldername.'/pdfs';
-                $downloadFile = $_GET['get'];
+                $downloadFile = filter_var($_GET['get'],FILTER_SANITIZE_STRING);    #6
                 if (file_exists("$path/$downloadFile")){
                     $file = file_get_contents("$path/$downloadFile");
                 }

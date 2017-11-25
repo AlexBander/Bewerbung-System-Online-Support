@@ -13,7 +13,7 @@
             {
                 $foldername =$_SESSION['get'];
                 $path = $subfolder.'/'.$foldername.'/pdfs';
-                $downloadFile = $_GET['get'];
+                $downloadFile = filter_var($_GET['get'], FILTER_SANITIZE_STRING); #6
                 if (file_exists("$path/$downloadFile")){
                     $file = "$path/$downloadFile";
                 }
@@ -39,11 +39,9 @@
       }
      else
      {
-        header('Content-Type: application/pdf');
-        header('Content-Disposition: attachment; filename=some.pdf');
-        header('Content-Length: ' . strlen($file));
         $counterfail++;
         counterFailUp($subfolder, $counterfail);
-        echo $file;
+        header('Location: index.php');
+        exit;
      }
 ?>
