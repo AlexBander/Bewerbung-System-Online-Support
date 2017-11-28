@@ -18,7 +18,9 @@
         <title>
             <?php echo "$firstname $name"; ?>
         </title>
-        <link rel="stylesheet" href="css/bootstrap.css"> </head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/project.css"> 
+</head>
 
     <body>
         <nav class="navbar navbar-default">
@@ -47,4 +49,4 @@
                 </blockquote>
             </div>
         </div>
-<?php endif; ?>
+<?php endif; if ( ! session_id() ){ @ session_start();}?>
