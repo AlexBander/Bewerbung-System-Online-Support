@@ -1,4 +1,4 @@
-AddHandler php70-cgi .php .html
+AddHandler php53-cgi .php .html
 php_flag magic_quotes_gpc off
 php_flag display_errors off
 <Files *.inc.php>

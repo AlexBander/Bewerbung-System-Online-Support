@@ -1,5 +1,6 @@
 <?php
-    session_start();
+   if ( ! session_id() ){ @ session_start();}
+        ob_start();
         include 'bewerbung.inc.php';
         include 'config.inc.php';
         include 'counter.inc.php';
@@ -33,6 +34,8 @@
         header('Content-Type: application/pdf');
         header("Content-Disposition: attachment; filename=$downloadFile");
         header('Content-Length: ' . strlen($file));
+        header("Cache-Control: no-cache");
+        header("Pragma: no-cache"); 
         $counter=counter($subfolder, $foldername, "count_dl.txt");
         $counter++;
         counterDownloadUp($subfolder, $foldername, $counter);
@@ -43,6 +46,8 @@
         header('Content-Type: application/pdf');
         header('Content-Disposition: attachment; filename=some.pdf');
         header('Content-Length: ' . strlen($file));
+        header("Cache-Control: no-cache");
+        header("Pragma: no-cache"); 
         $counterfail++;
         counterFailUp($subfolder, $counterfail);
         echo $file;

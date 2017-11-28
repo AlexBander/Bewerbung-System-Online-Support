@@ -1,5 +1,6 @@
 <?php
-    session_start();
+    if ( ! session_id() ){ @ session_start();}
+        ob_start();
         include 'bewerbung.inc.php';
         include 'config.inc.php';
         include 'counter.inc.php';

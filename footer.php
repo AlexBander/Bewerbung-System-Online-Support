@@ -27,7 +27,7 @@
                        <p><a href="impressum.php">Impressum</a> &middot; <a href="impressum.php#datenschutz_datenschutz">Datenschutz</a></p>
                        <!-- You have been finished -->
                        <!-- Copyright by Xandersoft.com let it stay and beleave it.-->
-                        <p>&middot; Copyleft &copy; 2016 &middot; <a href="https://github.com/xandersoft" target="_blank"><img src="https://x4s.it/img/GitHub-Mark-32px.png" crossorigin="anonymous"/> Xandersoft</a>.<a href="https://xandersoft.com/develop/bsos.php">com</a> &middot; All Rights Reserved &middot; </p>
+                        <p>&middot; Copyleft &copy; 2016 &middot; <a href="https://github.com/xandersoft" target="_blank"><img src="https://x4s.it/img/GitHub-Mark-32px.png"/> Xandersoft</a>.<a href="https://xandersoft.com/develop/bsos.php">com</a> &middot; All Rights Reserved &middot; </p>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,17 @@
+#wrap {
+    position: relative;
+    display: inline-block;
+}
+#cont {
+    width: 100%;
+    height: 100%;
+    border: 0px solid #aaa; /*To show the boundaries of the element*/
+}
+#cont:before {
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0,0.75);
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}

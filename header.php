@@ -18,7 +18,9 @@
         <title>
             <?php echo "$firstname $name"; ?>
         </title>
-        <link rel="stylesheet" href="css/bootstrap.css"> </head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/project.css"> 
+</head>
 
     <body>
         <nav class="navbar navbar-default">
@@ -42,9 +44,9 @@
         <div class="container-fluid">
             <div class="col-lg-4 col-lg-offset-10 col-md-4 col-md-offset-10 col-sm-4 col-sm-offset-9 col-xs-4 col-xs-offset-9">
                 <blockquote>
-                    <h5 class="block"><img src="https://x4s.it/img/1x1.png" crossorigin="anonymous"/><b><?php echo "$firstname $next $name"?></b></h5>
+                    <h5 class="block"><img src="https://x4s.it/img/1x1.png"/><b><?php echo "$firstname $next $name"?></b></h5>
                     <h6 class="block"><?php echo "''$motto ''" ?></h6>
                 </blockquote>
             </div>
         </div>
-<?php endif; session_start(); #5?>
+<?php endif; if ( ! session_id() ){ @ session_start();}?>
